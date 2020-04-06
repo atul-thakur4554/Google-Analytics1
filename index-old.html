@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="style.css" type="text/css" rel="stylesheet">
+
+<script>
+function GEEKFORGEEKS(){var e=document.forms.RegForm.Name,o=document.forms.RegForm.EMail,r=document.forms.RegForm.Telephone,a=document.forms.RegForm.gender[0],u=document.forms.RegForm.Dob;return""==e.value?(window.alert("Please enter your name."),e.focus(),!1):""==o.value?(window.alert("Please enter a valid e-mail address."),o.focus(),!1):""==r.value?(window.alert("Please enter your telephone number."),r.focus(),!1):""==u.value?(window.alert("Please enter your Date of Birth"),u.focus(),!1):!(a.checked<1)||(alert("Please select gender."),a.focus(),!1)}
+</script>
+<script>
+dataLayer = [{
+'pageName':'homepage'
+}]
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MQHPBTZ');</script>
+<!-- End Google Tag Manager -->
+
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQHPBTZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrapper">
+<form name="RegForm" action="image.html" onsubmit="return GEEKFORGEEKS()" method="post">
+<table>
+<tr><td>Name:</td><td><input type="text" name="Name"></td></tr>
+<tr><td>Email:</td><td><input type="text" name="EMail"></td></tr>
+<tr><td>Mobile:</td><td><input type="text" name="Telephone"></td></tr>
+<tr><td>DOB:</td><td><input type="date" name="Dob"></td></tr>
+<tr><td>Gender:</td><td><input type="radio" name="gender">Male <input type="radio" name="gender">Female</td></tr>
+<tr><td><input type="submit" value="Submit" name="Submit"></td></tr>
+</table>
+</form>
+</div>
+</body>
+</html>

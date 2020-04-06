@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Thankyou</title>
+<style>
+.wrapper{width:300px;margin:auto;}
+.img{display:none}
+</style>
+<script>
+dataLayer = [{
+'pageName':'thankyou'
+}]
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MQHPBTZ');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQHPBTZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrapper">
+<h1 align="center">Thankyou</h1>
+<br>
+<img src="img1.jpg" class="img">
+<img src="img2.jpg" class="img">
+<img src="img3.jpg" class="img">
+<img src="img4.jpg" class="img">
+<img src="img5.jpg" class="img">
+</div>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<script>
+$(document).ready(function(){
+var a=location.href.split('?')[1];var b=a.split('=')[1];
+if(b=='img1'){
+$('.img').eq(0).css({'display':'block'})
+}
+else if(b=='img2'){
+$('.img').eq(1).css({'display':'block'})
+}
+else if(b=='img3'){
+$('.img').eq(2).css({'display':'block'})
+}
+else if(b=='img4'){
+$('.img').eq(3).css({'display':'block'})
+}
+else if(b=='img5'){
+$('.img').eq(4).css({'display':'block'})
+}
+else{return false}
+;})
+</script>
+</body>
+</html>
